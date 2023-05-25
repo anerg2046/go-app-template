@@ -22,7 +22,7 @@ func init() {
 	// createTable()
 
 	// 如果只是单一数据库
-	Conn, err = database.ConnDB(config.DB.DSN, database.MYSQL)
+	Conn, err = database.ConnDB(config.DB_APP.DSN, config.DB_APP.DB_TYPE)
 	if err != nil {
 		panic(err)
 	}
