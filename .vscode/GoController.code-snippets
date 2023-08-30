@@ -1,0 +1,15 @@
+{
+    "Go App Template Controller 快速模板": {
+      "prefix": "GoController",
+      "body": [
+        "package ${TM_DIRECTORY/.*\\/(.+)$/$1/}\n",
+        "var ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} = new(${TM_FILENAME_BASE/(.*)/${1:/camelcase}/}$0)",
+        "type ${TM_FILENAME_BASE/(.*)/${1:/camelcase}/}$0 struct{}\n",
+        "func (${TM_FILENAME_BASE/(.*)/${1:/camelcase}/}$0) (c *gin.Context) response.Json {",
+        "\n",
+        "}\n",
+      ],
+      "description": "Go App Template Controller 快速模板"
+    }
+  }
+  
