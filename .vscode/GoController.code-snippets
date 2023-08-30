@@ -9,7 +9,8 @@
         "\n",
         "}\n",
       ],
-      "description": "Go App Template Controller 快速模板"
+      "description": "Go App Template Controller 快速模板",
+      "scope": "go"
     }
   }
   
