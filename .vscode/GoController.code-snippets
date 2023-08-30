@@ -3,9 +3,9 @@
       "prefix": "GoController",
       "body": [
         "package ${TM_DIRECTORY/.*\\/(.+)$/$1/}\n",
-        "var ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} = new(${TM_FILENAME_BASE/(.*)/${1:/camelcase}/}$0)",
-        "type ${TM_FILENAME_BASE/(.*)/${1:/camelcase}/}$0 struct{}\n",
-        "func (${TM_FILENAME_BASE/(.*)/${1:/camelcase}/}$0) (c *gin.Context) response.Json {",
+        "var ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} = new(${TM_FILENAME_BASE/(.*)/${1:/camelcase}/}${TM_DIRECTORY/.*\\/(.+)$/${1:/pascalcase}/})",
+        "type ${TM_FILENAME_BASE/(.*)/${1:/camelcase}/}${TM_DIRECTORY/.*\\/(.+)$/${1:/pascalcase}/} struct{}\n",
+        "func (${TM_FILENAME_BASE/(.*)/${1:/camelcase}/}${TM_DIRECTORY/.*\\/(.+)$/${1:/pascalcase}/}) $0(c *gin.Context) response.Json {",
         "\n",
         "}\n",
       ],
