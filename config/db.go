@@ -13,6 +13,7 @@ const (
 	DBTYPE_MYSQL
 	DBTYPE_MSSQL
 	DBTYPE_POSTGRES
+	DBTYPE_SQLITE
 )
 
 type dbConf struct {
